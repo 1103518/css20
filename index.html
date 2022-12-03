@@ -1,106 +1,105 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+body {
+  background-color: rgb(82, 182, 252);
+}
+
+.buttom {
+  width:550px;
+  height:490px;
+  border-radius:10px;
+  display:flex;
+  justify-content:center;
+  margin-top:15px;
+  margin-left : 30px;
+  position: absolute;
+}
+#first{
+  margin-top:18px;
+  width: 510px;
+  height: 130px;
+  margin-bottom:5px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  margin-top:5px;
+  margin-right:3.5px;
+  margin-left:3.5px;
+  margin-bottom:5px;
+  width: 31.9%;
+  padding-bottom: 65px;
+}
+.column2 {
+  float: left;
+  margin-top:3px;
+  margin-right:5px;
+  margin-left:5px;
+  width: 23%;
+  padding-bottom: 65px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  
+@media screen and (max-width:480px) {
+  .buttom{
+    width: 350px;
+    height: 480px;
+  }
+  #first{
+    width: 320px;
+    height: 120px;
+    margin-bottom:6px;
+  }
+  .column {
+    width: 100%;
+    height: 30px;
+    margin-bottom:0px;
+    margin-right:3px;
+    margin-left:0px;
+  }
+  .column2 {
+    width: 45.9%;
+    height: 20px;
+
+    margin-top:10px;
+    margin-right:7px;
+    margin-left:6px;
+    margin-bottom:-3px;
+    padding-bottom: 50px;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
 
-.header {
-  background-color: #4fdb74;
-  height: 200px;
-  padding: 15px;
-}
-.main {
-  background-color: #33b5e5;
-  margin: auto;
-  margin-top: 10px;
-  height: 200px;
-  width: 25%;
-  float: left;
-  padding: 15px;
-  margin-right: 10px;
-}
-.minimain {
-  background-color: #a0a3a1;
-  margin: auto;
-  height: 100px;
-  width: 19%;
-  float: left;
-  margin-top: 10px;
-  margin-right: 10px;
-  border: 1px solid white;
-}
-.row1 {
-  margin: auto;
-  margin-left: 10%;
-  width: 100%;
-  padding: 10px;
-}
-.row2 {
-  margin-left: 5%;
-  width: 100%;
-  padding:  100px;
-}
-@media only screen and (max-width: 480px) {
-  /* For mobile phones: */
-   [class*="header"] {
-    height: 100px;
-  }
-  [class*="main"] {
-    width: 100%;
-    margin-left: -10%;
-    height: 0px;
-  }
-   [class*="minimain"] {
-    width: 50%;
-    margin-left: -5%;
-    height: 50px;
-  }
-  [class*="row1"] {
-    margin-left: 10%;
-    width: 100%;
-  }
-  [class*="row2"] {
-    margin-left: 5%;
-    width: 100%;
-    padding:  10px;
-  }
-}
 </style>
 </head>
+
 <body>
-  <div class="header">
-    <h1></h1>
-  </div>
-<div class="row1">
-
-  <div class="main">
-
-  </div>
-  <div class="main">
-
-  </div>
-  <div class="main">
-
-  </div>
+<div class="buttom" style="background-color:white;">
   
-</div>
+  <div class="row">
+    <div id="first" style="background-color:#a6d900;"></div>
+    <div class="column" style="background-color:#00CACA;"><br/><br/><br/><br/><br/><br/><br/></div>
+    <div class="column" style="background-color:#00CACA;"><br/><br/><br/><br/><br/><br/><br/></div>
+    <div class="column" style="background-color:#00CACA;"><br/><br/><br/><br/><br/><br/><br/></div>
 
-<div class="row2">
-  <div class="minimain">
-
-  </div>
-  <div class="minimain">
-
-  </div>
-  <div class="minimain">
-
-  </div>
-  <div class="minimain">
-
+    <div class="column2" style="background-color:#F0F0F0;"><br/><br/><br/></div>
+    <div class="column2" style="background-color:#F0F0F0;"><br/><br/><br/></div>
+    <div class="column2" style="background-color:#F0F0F0;"><br/><br/><br/></div>
+    <div class="column2" style="background-color:#F0F0F0;"><br/><br/><br/></div>
   </div>
 </div>
 </body>
+
 </html>
